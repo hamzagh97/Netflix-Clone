@@ -1,0 +1,36 @@
+.nav-list {
+  display: none;
+}
+
+.nav-list ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  color: #e5e5e5;
+}
+
+.nav-list li.active {
+  font-family: "Netflix Sans Medium";
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .nav-list {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

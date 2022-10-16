@@ -1,0 +1,82 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 5vw;
+  position: absolute;
+  max-width: 40%;
+  height: 100%;
+  padding-left: 4%;
+}
+
+.info p:first-of-type {
+  color: #fff;
+  font-size: 1.6vw;
+  margin: 1vw 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  transition: color 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-family: "Netflix Sans Bold";
+  display: none;
+}
+
+.info p:last-of-type {
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 1.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  margin: 1.9vw 0 0;
+  letter-spacing: 1px;
+  font-family: "Netflix Sans light";
+}
+
+.info .action {
+  display: flex;
+  margin-top: 1.5vw;
+}
+
+.info button {
+  font-family: "Netflix Sans Medium";
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  opacity: 1;
+  width: 10vw;
+}
+
+.info button.play {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.info button.more-info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  margin-left: 15px;
+}
+
+.info button.more-info:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

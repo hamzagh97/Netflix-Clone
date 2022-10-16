@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans Medium;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+}
+
+body {
+  background-color: #141414;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+li {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Netflix Sans Medium";
+  src: local("Netflix Sans Medium"),
+    url("./assests/fonts/Netflix Sans Medium.otf") format("openType");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Netflix Sans Light";
+  src: local("Netflix Sans Light"),
+    url("./assests/fonts/Netflix Sans Light.otf") format("openType");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Netflix Sans Bold";
+  src: local("Netflix Sans Bold"),
+    url("./assests/fonts/Netflix Sans Bold.otf") format("openType");
+  font-weight: bold;
+}

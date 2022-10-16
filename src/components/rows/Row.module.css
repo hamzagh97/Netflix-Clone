@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --handle-width: 5%;
+  --slider-padding: var(--handle-width);
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  margin: 3vw 0;
+}
+
+.row .container {
+  position: relative;
+  display: flex;
+}
+
+.row .container:hover .text {
+  opacity: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-left: calc(4% + 5px);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  display: grid;
+  grid-auto-columns: calc((100% / 5));
+  padding-left: 4%;
+  padding-right: 4%;
+  grid-auto-flow: column;
+
+  /* transform: translateX(
+    calc(
+      (
+          var(--slider-index) *
+            (-100% + ((var(--slider-padding) * 2) + var(--movie-margin)))
+        ) / (var(--items-per-screen))
+    )
+  );  */
+  transition: transform 500ms ease-in-out;
+}
+
+/* .slide {
+  transform: translateX(calc(-92% + 10px));
+} */
+
+/* .slider:nth-child(0):hover {
+  transform: scale(1.5) translateY(-40%) translateX(-40%);
+} */
+
+.handle {
+  border: none;
+  background-color: hsla(0, 0%, 8%, 0.5); /*hsla(0, 0%, 8%, 0.5)*/
+  width: calc(4% - 5px);
+  cursor: pointer;
+  color: white;
+  transition: background-color 150ms ease-in-out;
+  position: absolute;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.handle:hover,
+.handle:focus {
+  background-color: hsla(0, 0%, 8%, 0.8);
+}
+
+.handle:hover .text,
+.handle:focus .text {
+  transform: scale(1.2);
+}
+
+.right-handle {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left-handle {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.text {
+  transition: transform 150ms ease-in-out;
+  opacity: 0;
+}
+
+/* .progress-bar {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.progress-item {
+  flex: 0 0 1.5rem;
+  min-width: 1.5rem;
+  height: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.progress-item.active {
+  background-color: rgba(255, 255, 255, 0.9);
+} */
+
+@media (min-width: 576px) {
+  .slider {
+    grid-auto-columns: calc((100% / 3));
+  }
+}
+
+@media (min-width: 768px) {
+  .slider {
+    grid-auto-columns: calc((100% / 4));
+  }
+}
+
+@media (min-width: 992px) {
+  .slider {
+    grid-auto-columns: calc((100% / 5));
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    grid-auto-columns: calc((100% / 6));
+  }
+}

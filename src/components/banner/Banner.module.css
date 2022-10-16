@@ -1,0 +1,49 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.banner img {
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.banner .container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  /* background: -moz-linear-gradient(to top, transparent 95%, #141414); */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,91 @@
+.nav {
+  max-height: 68px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  color: #e5e5e5;
+  font-family: "Netflix Sans Light";
+  z-index: 105;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 5px 4%;
+}
+
+.scrolled {
+  background-color: #0b0b0b;
+}
+
+.logo {
+  font-size: 1.3em;
+  height: 100%;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Netflix Sans Bold";
+  color: #e50914;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .nav {
+    height: 68px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+/* .flip-scale-up-hor {
+  -webkit-animation: flip-scale-up-hor 0.5s linear both;
+  animation: flip-scale-up-hor 0.5s linear both;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes flip-scale-up-hor {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+    transform: scale(1.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+    transform: scale(1) rotateX(-180deg);
+  }
+}
+@keyframes flip-scale-up-hor {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+    transform: scale(1.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+    transform: scale(1) rotateX(-180deg);
+  }
+} */
